@@ -16,10 +16,10 @@ char* multiploGetcheNumerico(int quantDigitos)
     }
     else if(caractere == 8)
     {
-      printf("%c%c%c%c", 0, 8, 0, 8);
       if(i != 0)
       {
-          i--;
+        printf("%c%c%c%c", 0, 8, 0, 8);
+        i--;
       }
     }
   }
