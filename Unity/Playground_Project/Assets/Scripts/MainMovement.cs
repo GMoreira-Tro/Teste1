@@ -23,7 +23,8 @@ public class MainMovement : MonoBehaviour
     public void Move()
     {
         float buttonValue = mainMovement.Main.Move.ReadValue<float>();
-        transform.Translate(buttonValue * movingSpeed * Time.deltaTime * transform.forward);
+        transform.Translate(buttonValue * movingSpeed * Time.deltaTime * transform.forward
+            , Space.World);
     }
     public void Rotate()
     {

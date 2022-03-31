@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{71E7A52E-2953-BCFC-F9A9-1FB4FFA052B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -56,8 +57,9 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MainMovement.cs" />
     <Compile Include="Assets\Input Actions\Main movement.cs" />
+    <Compile Include="Assets\Scripts\MainMovement.cs" />
+    <Compile Include="Assets\Scripts\CameraControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\_External Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -94,6 +96,7 @@
     <None Include="Assets\_External Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
